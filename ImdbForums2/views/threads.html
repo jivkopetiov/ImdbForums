@@ -1,0 +1,42 @@
+﻿<h1><a href="/boards">Message Boards</a>: {{board.name}}</h1>
+
+<div style="height:28px">
+
+    <div class="new-thread">
+        <a href="/boards/{{board.id}}/newThread">Start New Thread</a>
+    </div>
+
+    <div class="pagination">
+        <a class="current">1</a>
+        <a href="/board/bd0000002/threads/?p=2">2</a>
+        <a href="/board/bd0000002/threads/?p=3">3</a>
+        <a href="/board/bd0000002/threads/?p=4">4</a>
+        <a href="/board/bd0000002/threads/?p=5">5</a>
+        <a href="/board/bd0000002/threads/?p=6">6</a>
+        <a href="/board/bd0000002/threads/?p=7">7</a>
+        <a href="/board/bd0000002/threads/?p=8">8</a>
+        <a href="/board/bd0000002/threads/?p=9">9</a>
+        <a href="/board/bd0000002/threads/?p=10">10</a>
+        <a href="/board/bd0000002/threads/?p=11">»</a>
+    </div>
+
+</div>
+
+<div class="threads">
+
+    <div class="thread header">
+        <div class="title">Thread Title</div>
+        <div class="author">Started By</div>
+        <div class="replies">#</div>
+        <div class="timestamp">Latest Posting</div>
+    </div>
+
+    <div ng-class-odd="'thread odd'" ng-class-even="'thread even'" ng-repeat="thread in threads">
+
+        <div class="title"><a href="/boards/{{board.id}}/threads/{{thread.id}}/posts">{{thread.title}}</a></div>
+        <div class="author"><span class="no-avatar"></span> <a href="/users/{{thread.author.id}}">{{thread.author.name}}</a></div>
+        <div class="replies">{{thread.postsCount}}</div>
+        <div class="timestamp"> <a href="/boards/{{board.id}}/threads/{{thread.id}}/posts">{{thread.created | date}}</a> </div>
+    </div>
+
+</div>

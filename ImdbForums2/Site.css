@@ -1,0 +1,219 @@
+﻿img {
+    border: medium none;
+}
+
+a, a:link {
+    color: #136CB2;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#main {
+    width:790px;
+    font-family: Verdana,Arial,sans-serif;
+    font-size:13px;
+}
+
+h1 {
+    color: #333333;
+    font-size: 21px;
+    line-height: 110%;
+    margin: 14px 0;
+}
+
+h2 {
+    color: #A58500;
+    font-size: 17.5px;
+    margin: 0 0 0.5em;
+    padding: 0;
+}
+
+.board.odd 
+{
+    background: none repeat scroll 0 0 #F6F6F5;
+    border: 1px solid #FFFFFF;
+}
+
+.board.even 
+{
+    background: none repeat scroll 0 0 #FBFBFB;
+    border: 1px solid #FFFFFF;
+}
+
+.board-text {
+     padding:10px;
+     width:500px;
+     display:inline-block;
+     vertical-align: middle;
+}
+
+.board-text a {
+    font-weight:bold;
+}
+
+.board-postings {
+    text-align: right;
+    width: 70px;
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.category
+{
+    border: 1px solid #E8E8E8;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    padding: 10px 12px;
+}
+
+.threads {
+     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.thread.header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    color: #FFFFFF;
+    
+    font-size: 14px;
+    font-weight: bold !important;
+
+    background: none repeat scroll 0 0 #006699;
+    height: 24px;
+    padding-top: 0;
+}
+
+.thread > div {
+    display: inline-block;
+     padding-top: 4px;
+     text-overflow: ellipsis;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.thread.header .title {
+    padding-left: 4px;
+}
+
+.thread .title {
+    padding-right: 5px;
+    
+    width: 400px;
+}
+
+.thread .author {
+     width: 155px;
+}
+
+.thread .replies {
+    text-align: center;
+    width: 40px;
+}
+
+.thread .timestamp {
+     text-align: center;
+     width: 160px;
+}
+
+.thread.odd {
+    background: none repeat scroll 0 0 #F6F6F5;
+    border: 1px solid #FFFFFF;
+    padding: 2px 5px;
+}
+
+.thread.even {
+    background: none repeat scroll 0 0 #FBFBFB;
+    border: 1px solid #FFFFFF;
+    padding: 2px 5px;
+}
+
+.no-avatar {
+     display: inline-block;
+    height: 22px;
+    vertical-align: middle;
+    width: 24px;
+}
+
+.new-thread {
+     width:440px;display:inline-block;
+}
+
+.new-thread a {
+    font-weight: bold; 
+    padding-left: 25px;
+    background: url("http://ia.media-imdb.com/images/G/01/imdb/images/boards/new_topic._V381321506_.png") no-repeat scroll 0 -2px rgba(0, 0, 0, 0);
+}
+
+.pagination {
+     display:inline-block;
+     text-align:right;
+
+}
+
+.pagination a {
+    border: 1px solid #C4DAEC;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 11px;
+    margin-right: 2px;
+    min-width: 20px;
+    padding: 3px 0;
+    text-align: center;
+}
+
+.pagination a.current, .pagination a:hover {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #676767;
+    color: #000000;
+    text-decoration: none;
+}
+
+.comment {
+    border-radius: 8px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.comment h2 {
+     background: none repeat scroll 0 0 #006699;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin: 0;
+    overflow: hidden;
+    padding: 5px 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.comment .body {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-height: 25px;
+    overflow: hidden;
+    padding: 10px;
+    text-overflow: ellipsis;
+}
+
+.comment .metadata {
+    background: none repeat scroll 0 0 #DDDDDD;
+    min-height: 51px;
+    padding-right: 5px;
+}
+
+a.avatar {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #EEEEEE;
+    float: left;
+    height: 48px;
+    margin-right: 5px;
+    width: 48px;
+}
+
+.metadata .byline-main {
+    padding-top: 7px;
+}

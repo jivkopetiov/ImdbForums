@@ -1,0 +1,17 @@
+﻿<h1>Message Boards</h1>
+
+<div class="category" ng-repeat="category in categories">
+    <h2>{{category}}</h2>
+    <div ng-class-odd="'board odd'" ng-class-even="'board even'" ng-repeat="board in boards | filter:{category:category}">
+        <div class="board-text">
+            <div><a href="/boards/{{board.id}}/threads">{{board.name}}</a></div>
+            <div>
+                {{board.description}}
+            </div>
+        </div>
+        <div class="board-postings">
+            {{board.threadCount}}
+        </div>
+
+    </div>
+</div>
